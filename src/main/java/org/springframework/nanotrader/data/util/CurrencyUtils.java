@@ -22,6 +22,8 @@ public class CurrencyUtils {
     JSONTokener tokener = new JSONTokener(con.getInputStream());
     JSONObject obj = new JSONObject(tokener);
     rates = obj.getJSONObject("rates");
+    System.out.println("wat");
+    
   }
 
   private static BigDecimal getRate(String currencyCode) throws IOException {
